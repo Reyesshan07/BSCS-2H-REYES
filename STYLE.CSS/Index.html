@@ -1,0 +1,109 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Bar and Registration Form</title>
+   <style>
+     body {
+            
+            background-image: url('/burger.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+        }
+   </style>
+    
+    <div class="menu">
+        <h1>OUR MENU</h1>
+         
+        EVERYDAY SERVED FROM 8AM TO 10PM <hr>
+        
+        <div class="menu-section">
+            <h2>BURGER</h2>
+            <div class="menu-item">
+                <span><h3>Burger Plain</h3></span> <span><h3>Php.25.00</h3></span>
+            </div>
+            <div class="menu-item">
+                <span><h3>Cheese Burger</h3></span> <span><h3>Php.35.00</h3></span>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>DESSERT</h2>
+            <div class="menu-item">
+                <span><h3>Ice Cream</h3></span> <span><h3>Php.30.00</h3></span>
+            </div>
+            <div class="menu-item"><span><h3>Frozen Salad</h3></span> <span><h3>Php.35.00</h3></span>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>SOFT DRINKS</h2>
+            <div class="menu-item">
+                <span><h3>Sprite</h3></span> <span><h3>Php.17.00</h3></span>
+            </div>
+            <div class="menu-item">
+                <span><h3>Mountain Dew</h3></span><span>
+                  <h3>Php.17.00</h3></span>
+            </div>
+        </div>
+
+        <div class="visit-website">
+            <a href="">VIST OUR WEBSITE</a></p>
+        </div>
+    </div>
+    <hr>
+    
+        <h2>Please fill up the form</h2>
+    
+    <form action="/submit-form" method="post" enctype="multipart/form-data">
+       
+        <label for="firstName">Enter Your First Name:</label><br>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+      
+        <label for="lastName">Enter Your Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+     
+        <label for="email">Enter Your Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        
+        <label for="password">Create a Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+       
+        <label for="accountType">Account type (required):</label><br>
+        <input type="radio" id="personal" name="accountType" value="Personal" required>
+        <label for="personal">Personal</label><br>
+        <input type="radio" id="business" name="accountType" value="Business" required>
+        <label for="business">Business</label><br><br>
+
+      
+        <label for="file">Upload Profile Picture:</label><br>
+        <input type="file" id="file" name="file" accept="image/*"><br><br>
+
+        
+        <label for="age">Input Your Age:</label><br>
+        <input type="number" id="age" name="age" min="1" max="150"><br><br>
+
+       
+        <label for="referral">How did you hear about us?</label><br>
+        <input type="text" id="referral" name="referral"><br><br>
+
+       
+        <label for="bio">Provide Bio:</label><br>
+        <textarea id="bio" name="bio" rows="4" cols="50"></textarea><br><br>
+
+       
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I accept the terms and conditions</label><br><br>
+
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+    
